@@ -1,0 +1,11 @@
+vcom "$path_ip_wra/ip_rx/rx_xcvr_wrapper.vhd"
+vcom "$path_ip_wra/ip_rx/rx_output_buffer_wrapper.vhd"
+vcom "$path_src_rx/rx_check.vhd"
+vcom "$path_src_rx/rx_control.vhd"
+vcom "$path_src_rx/rx_decoding.vhd"
+vcom "$path_src_rx/rx_frame_alignment.vhd"
+vcom "$path_src_rx/rx_lfsr_init.vhd"
+vcom "$path_src_rx/rx_lane_decoding.vhd"
+vcom "$path_src_rx/rx_esistream.vhd"
+vcom "$path_src_rx/rx_esistream_with_xcvr.vhd"
+

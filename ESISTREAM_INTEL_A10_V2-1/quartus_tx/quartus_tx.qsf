@@ -1,0 +1,78 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+# Date created = 15:41:06  July 11, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		quartus_tx_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Arria 10"
+set_global_assignment -name DEVICE 10AX115N4F40I3SG
+set_global_assignment -name TOP_LEVEL_ENTITY tx_esistream_with_xcvr
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:41:06  JULY 11, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Standard Edition"
+set_global_assignment -name PROJECT_IP_REGENERATION_POLICY ALWAYS_REGENERATE_IP
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name SEED 25
+
+set_global_assignment -name FLOW_ENABLE_RTL_VIEWER ON
+set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
+set_global_assignment -name OPTIMIZATION_MODE BALANCED
+set_global_assignment -name VHDL_FILE ../src_common/sync_rst.vhd
+set_global_assignment -name VHDL_FILE ../src_common/delayed_rst.vhd
+set_global_assignment -name VHDL_FILE ../src_common/esistream_pkg.vhd
+set_global_assignment -name VHDL_FILE ../src_common/lfsr.vhd
+set_global_assignment -name VHDL_FILE ../src_common/data_gen.vhd
+set_global_assignment -name VHDL_FILE ../src_common/delay.vhd
+set_global_assignment -name VHDL_FILE ../src_common/edge_detect.vhd
+set_global_assignment -name VHDL_FILE ../src_common/pushbutton_request.vhd
+set_global_assignment -name VHDL_FILE ../src_tx/tx_scrambling.vhd
+set_global_assignment -name VHDL_FILE ../src_tx/tx_esistream.vhd
+set_global_assignment -name VHDL_FILE ../src_tx/tx_esistream_with_xcvr.vhd
+set_global_assignment -name VHDL_FILE ../src_tx/tx_encoding.vhd
+set_global_assignment -name VHDL_FILE ../src_tx/tx_disparity_word_16b.vhd
+set_global_assignment -name VHDL_FILE ../src_tx/tx_disparity.vhd
+set_global_assignment -name VHDL_FILE ../src_tx/tx_control.vhd
+set_global_assignment -name VHDL_FILE ../A10/ip_tx/tx_xcvr_wrapper.vhd
+set_global_assignment -name QSYS_FILE ../A10/ip_tx/tx_ip_xcvr.qsys
+set_global_assignment -name QSYS_FILE ../A10/ip_tx/tx_ip_rst.qsys
+set_global_assignment -name QSYS_FILE ../A10/ip_tx/tx_ip_pll.qsys
+set_global_assignment -name QSYS_FILE ../A10/ip_common/pll_sys/pll_sys.qsys
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

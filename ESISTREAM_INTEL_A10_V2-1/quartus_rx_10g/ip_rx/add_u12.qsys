@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags="INTERNAL_COMPONENT=true"
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element parallel_add_0
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="10AX115N4F40I3SG" />
+ <parameter name="deviceFamily" value="Arria 10" />
+ <parameter name="deviceSpeedGrade" value="3" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="true" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface
+   name="parallel_add_input"
+   internal="parallel_add_0.parallel_add_input"
+   type="conduit"
+   dir="end">
+  <port name="data0x" internal="data0x" />
+  <port name="data1x" internal="data1x" />
+  <port name="clock" internal="clock" />
+ </interface>
+ <interface
+   name="parallel_add_output"
+   internal="parallel_add_0.parallel_add_output"
+   type="conduit"
+   dir="end">
+  <port name="result" internal="result" />
+ </interface>
+ <module
+   name="parallel_add_0"
+   kind="parallel_add"
+   version="18.1"
+   enabled="1"
+   autoexport="1">
+  <parameter name="DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="GUI_ACLR" value="false" />
+  <parameter name="GUI_CALCULATE">Automatically calculate the width</parameter>
+  <parameter name="GUI_CLKEN" value="false" />
+  <parameter name="GUI_MSW_SUBTRACT" value="Add" />
+  <parameter name="GUI_PIPELINE" value="2" />
+  <parameter name="GUI_REPRESENTATION" value="UNSIGNED" />
+  <parameter name="GUI_SHIFT" value="0" />
+  <parameter name="GUI_SIZE" value="2" />
+  <parameter name="GUI_USE_LATENCY">Yes I want output latency of</parameter>
+  <parameter name="GUI_WIDTH" value="12" />
+  <parameter name="GUI_WIDTHR_VALUE" value="12" />
+ </module>
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

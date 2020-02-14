@@ -1,0 +1,8 @@
+vcom "$path_ip_wra/ip_tx/tx_xcvr_wrapper.vhd"
+vcom "$path_src_tx/tx_control.vhd"
+vcom "$path_src_tx/tx_disparity_word_16b.vhd"
+vcom "$path_src_tx/tx_disparity.vhd"
+vcom "$path_src_tx/tx_scrambling.vhd"
+vcom "$path_src_tx/tx_encoding.vhd"
+vcom "$path_src_tx/tx_esistream.vhd"
+vcom "$path_src_tx/tx_esistream_with_xcvr.vhd"

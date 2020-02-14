@@ -1,0 +1,8 @@
+vcom "$path_src_co/esistream_pkg.vhd"
+vcom "$path_src_co/data_gen.vhd"
+vcom "$path_src_co/delay.vhd"
+vcom "$path_src_co/delay_slv.vhd"
+vcom "$path_src_co/edge_detect.vhd"
+vcom "$path_src_co/lfsr.vhd"
+vcom "$path_src_co/pushbutton_request.vhd"
+vcom "$path_src_co/two_flop_synchronizer.vhd"

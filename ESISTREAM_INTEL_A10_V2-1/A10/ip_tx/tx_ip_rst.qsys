@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags="INTERNAL_COMPONENT=true"
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element xcvr_reset_control_0
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="10AX115N4F40I3SG" />
+ <parameter name="deviceFamily" value="Arria 10" />
+ <parameter name="deviceSpeedGrade" value="3" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="true" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface
+   name="clock"
+   internal="xcvr_reset_control_0.clock"
+   type="clock"
+   dir="end">
+  <port name="clock" internal="clock" />
+ </interface>
+ <interface
+   name="pll_cal_busy"
+   internal="xcvr_reset_control_0.pll_cal_busy"
+   type="conduit"
+   dir="end">
+  <port name="pll_cal_busy" internal="pll_cal_busy" />
+ </interface>
+ <interface
+   name="pll_locked"
+   internal="xcvr_reset_control_0.pll_locked"
+   type="conduit"
+   dir="end">
+  <port name="pll_locked" internal="pll_locked" />
+ </interface>
+ <interface name="pll_locked0" internal="xcvr_reset_control_0.pll_locked0" />
+ <interface name="pll_locked1" internal="xcvr_reset_control_0.pll_locked1" />
+ <interface name="pll_locked10" internal="xcvr_reset_control_0.pll_locked10" />
+ <interface name="pll_locked11" internal="xcvr_reset_control_0.pll_locked11" />
+ <interface name="pll_locked12" internal="xcvr_reset_control_0.pll_locked12" />
+ <interface name="pll_locked13" internal="xcvr_reset_control_0.pll_locked13" />
+ <interface name="pll_locked14" internal="xcvr_reset_control_0.pll_locked14" />
+ <interface name="pll_locked15" internal="xcvr_reset_control_0.pll_locked15" />
+ <interface name="pll_locked16" internal="xcvr_reset_control_0.pll_locked16" />
+ <interface name="pll_locked17" internal="xcvr_reset_control_0.pll_locked17" />
+ <interface name="pll_locked18" internal="xcvr_reset_control_0.pll_locked18" />
+ <interface name="pll_locked19" internal="xcvr_reset_control_0.pll_locked19" />
+ <interface name="pll_locked2" internal="xcvr_reset_control_0.pll_locked2" />
+ <interface name="pll_locked20" internal="xcvr_reset_control_0.pll_locked20" />
+ <interface name="pll_locked21" internal="xcvr_reset_control_0.pll_locked21" />
+ <interface name="pll_locked22" internal="xcvr_reset_control_0.pll_locked22" />
+ <interface name="pll_locked23" internal="xcvr_reset_control_0.pll_locked23" />
+ <interface name="pll_locked24" internal="xcvr_reset_control_0.pll_locked24" />
+ <interface name="pll_locked25" internal="xcvr_reset_control_0.pll_locked25" />
+ <interface name="pll_locked26" internal="xcvr_reset_control_0.pll_locked26" />
+ <interface name="pll_locked27" internal="xcvr_reset_control_0.pll_locked27" />
+ <interface name="pll_locked28" internal="xcvr_reset_control_0.pll_locked28" />
+ <interface name="pll_locked29" internal="xcvr_reset_control_0.pll_locked29" />
+ <interface name="pll_locked3" internal="xcvr_reset_control_0.pll_locked3" />
+ <interface name="pll_locked30" internal="xcvr_reset_control_0.pll_locked30" />
+ <interface name="pll_locked31" internal="xcvr_reset_control_0.pll_locked31" />
+ <interface name="pll_locked4" internal="xcvr_reset_control_0.pll_locked4" />
+ <interface name="pll_locked5" internal="xcvr_reset_control_0.pll_locked5" />
+ <interface name="pll_locked6" internal="xcvr_reset_control_0.pll_locked6" />
+ <interface name="pll_locked7" internal="xcvr_reset_control_0.pll_locked7" />
+ <interface name="pll_locked8" internal="xcvr_reset_control_0.pll_locked8" />
+ <interface name="pll_locked9" internal="xcvr_reset_control_0.pll_locked9" />
+ <interface
+   name="pll_powerdown"
+   internal="xcvr_reset_control_0.pll_powerdown"
+   type="conduit"
+   dir="end">
+  <port name="pll_powerdown" internal="pll_powerdown" />
+ </interface>
+ <interface name="pll_powerdown0" internal="xcvr_reset_control_0.pll_powerdown0" />
+ <interface name="pll_powerdown1" internal="xcvr_reset_control_0.pll_powerdown1" />
+ <interface
+   name="pll_powerdown10"
+   internal="xcvr_reset_control_0.pll_powerdown10" />
+ <interface
+   name="pll_powerdown11"
+   internal="xcvr_reset_control_0.pll_powerdown11" />
+ <interface
+   name="pll_powerdown12"
+   internal="xcvr_reset_control_0.pll_powerdown12" />
+ <interface
+   name="pll_powerdown13"
+   internal="xcvr_reset_control_0.pll_powerdown13" />
+ <interface
+   name="pll_powerdown14"
+   internal="xcvr_reset_control_0.pll_powerdown14" />
+ <interface
+   name="pll_powerdown15"
+   internal="xcvr_reset_control_0.pll_powerdown15" />
+ <interface
+   name="pll_powerdown16"
+   internal="xcvr_reset_control_0.pll_powerdown16" />
+ <interface
+   name="pll_powerdown17"
+   internal="xcvr_reset_control_0.pll_powerdown17" />
+ <interface
+   name="pll_powerdown18"
+   internal="xcvr_reset_control_0.pll_powerdown18" />
+ <interface
+   name="pll_powerdown19"
+   internal="xcvr_reset_control_0.pll_powerdown19" />
+ <interface name="pll_powerdown2" internal="xcvr_reset_control_0.pll_powerdown2" />
+ <interface
+   name="pll_powerdown20"
+   internal="xcvr_reset_control_0.pll_powerdown20" />
+ <interface
+   name="pll_powerdown21"
+   internal="xcvr_reset_control_0.pll_powerdown21" />
+ <interface
+   name="pll_powerdown22"
+   internal="xcvr_reset_control_0.pll_powerdown22" />
+ <interface
+   name="pll_powerdown23"
+   internal="xcvr_reset_control_0.pll_powerdown23" />
+ <interface
+   name="pll_powerdown24"
+   internal="xcvr_reset_control_0.pll_powerdown24" />
+ <interface
+   name="pll_powerdown25"
+   internal="xcvr_reset_control_0.pll_powerdown25" />
+ <interface
+   name="pll_powerdown26"
+   internal="xcvr_reset_control_0.pll_powerdown26" />
+ <interface
+   name="pll_powerdown27"
+   internal="xcvr_reset_control_0.pll_powerdown27" />
+ <interface
+   name="pll_powerdown28"
+   internal="xcvr_reset_control_0.pll_powerdown28" />
+ <interface
+   name="pll_powerdown29"
+   internal="xcvr_reset_control_0.pll_powerdown29" />
+ <interface name="pll_powerdown3" internal="xcvr_reset_control_0.pll_powerdown3" />
+ <interface
+   name="pll_powerdown30"
+   internal="xcvr_reset_control_0.pll_powerdown30" />
+ <interface
+   name="pll_powerdown31"
+   internal="xcvr_reset_control_0.pll_powerdown31" />
+ <interface name="pll_powerdown4" internal="xcvr_reset_control_0.pll_powerdown4" />
+ <interface name="pll_powerdown5" internal="xcvr_reset_control_0.pll_powerdown5" />
+ <interface name="pll_powerdown6" internal="xcvr_reset_control_0.pll_powerdown6" />
+ <interface name="pll_powerdown7" internal="xcvr_reset_control_0.pll_powerdown7" />
+ <interface name="pll_powerdown8" internal="xcvr_reset_control_0.pll_powerdown8" />
+ <interface name="pll_powerdown9" internal="xcvr_reset_control_0.pll_powerdown9" />
+ <interface
+   name="pll_select"
+   internal="xcvr_reset_control_0.pll_select"
+   type="conduit"
+   dir="end">
+  <port name="pll_select" internal="pll_select" />
+ </interface>
+ <interface
+   name="reset"
+   internal="xcvr_reset_control_0.reset"
+   type="reset"
+   dir="end">
+  <port name="reset" internal="reset" />
+ </interface>
+ <interface name="rx_analogreset" internal="xcvr_reset_control_0.rx_analogreset" />
+ <interface
+   name="rx_analogreset0"
+   internal="xcvr_reset_control_0.rx_analogreset0" />
+ <interface
+   name="rx_analogreset1"
+   internal="xcvr_reset_control_0.rx_analogreset1" />
+ <interface
+   name="rx_analogreset10"
+   internal="xcvr_reset_control_0.rx_analogreset10" />
+ <interface
+   name="rx_analogreset11"
+   internal="xcvr_reset_control_0.rx_analogreset11" />
+ <interface
+   name="rx_analogreset12"
+   internal="xcvr_reset_control_0.rx_analogreset12" />
+ <interface
+   name="rx_analogreset13"
+   internal="xcvr_reset_control_0.rx_analogreset13" />
+ <interface
+   name="rx_analogreset14"
+   internal="xcvr_reset_control_0.rx_analogreset14" />
+ <interface
+   name="rx_analogreset15"
+   internal="xcvr_reset_control_0.rx_analogreset15" />
+ <interface
+   name="rx_analogreset16"
+   internal="xcvr_reset_control_0.rx_analogreset16" />
+ <interface
+   name="rx_analogreset17"
+   internal="xcvr_reset_control_0.rx_analogreset17" />
+ <interface
+   name="rx_analogreset18"
+   internal="xcvr_reset_control_0.rx_analogreset18" />
+ <interface
+   name="rx_analogreset19"
+   internal="xcvr_reset_control_0.rx_analogreset19" />
+ <interface
+   name="rx_analogreset2"
+   internal="xcvr_reset_control_0.rx_analogreset2" />
+ <interface
+   name="rx_analogreset20"
+   internal="xcvr_reset_control_0.rx_analogreset20" />
+ <interface
+   name="rx_analogreset21"
+   internal="xcvr_reset_control_0.rx_analogreset21" />
+ <interface
+   name="rx_analogreset22"
+   internal="xcvr_reset_control_0.rx_analogreset22" />
+ <interface
+   name="rx_analogreset23"
+   internal="xcvr_reset_control_0.rx_analogreset23" />
+ <interface
+   name="rx_analogreset24"
+   internal="xcvr_reset_control_0.rx_analogreset24" />
+ <interface
+   name="rx_analogreset25"
+   internal="xcvr_reset_control_0.rx_analogreset25" />
+ <interface
+   name="rx_analogreset26"
+   internal="xcvr_reset_control_0.rx_analogreset26" />
+ <interface
+   name="rx_analogreset27"
+   internal="xcvr_reset_control_0.rx_analogreset27" />
+ <interface
+   name="rx_analogreset28"
+   internal="xcvr_reset_control_0.rx_analogreset28" />
+ <interface
+   name="rx_analogreset29"
+   internal="xcvr_reset_control_0.rx_analogreset29" />
+ <interface
+   name="rx_analogreset3"
+   internal="xcvr_reset_control_0.rx_analogreset3" />
+ <interface
+   name="rx_analogreset30"
+   internal="xcvr_reset_control_0.rx_analogreset30" />
+ <interface
+   name="rx_analogreset31"
+   internal="xcvr_reset_control_0.rx_analogreset31" />
+ <interface
+   name="rx_analogreset4"
+   internal="xcvr_reset_control_0.rx_analogreset4" />
+ <interface
+   name="rx_analogreset5"
+   internal="xcvr_reset_control_0.rx_analogreset5" />
+ <interface
+   name="rx_analogreset6"
+   internal="xcvr_reset_control_0.rx_analogreset6" />
+ <interface
+   name="rx_analogreset7"
+   internal="xcvr_reset_control_0.rx_analogreset7" />
+ <interface
+   name="rx_analogreset8"
+   internal="xcvr_reset_control_0.rx_analogreset8" />
+ <interface
+   name="rx_analogreset9"
+   internal="xcvr_reset_control_0.rx_analogreset9" />
+ <interface name="rx_cal_busy" internal="xcvr_reset_control_0.rx_cal_busy" />
+ <interface name="rx_cal_busy0" internal="xcvr_reset_control_0.rx_cal_busy0" />
+ <interface name="rx_cal_busy1" internal="xcvr_reset_control_0.rx_cal_busy1" />
+ <interface name="rx_cal_busy10" internal="xcvr_reset_control_0.rx_cal_busy10" />
+ <interface name="rx_cal_busy11" internal="xcvr_reset_control_0.rx_cal_busy11" />
+ <interface name="rx_cal_busy12" internal="xcvr_reset_control_0.rx_cal_busy12" />
+ <interface name="rx_cal_busy13" internal="xcvr_reset_control_0.rx_cal_busy13" />
+ <interface name="rx_cal_busy14" internal="xcvr_reset_control_0.rx_cal_busy14" />
+ <interface name="rx_cal_busy15" internal="xcvr_reset_control_0.rx_cal_busy15" />
+ <interface name="rx_cal_busy16" internal="xcvr_reset_control_0.rx_cal_busy16" />
+ <interface name="rx_cal_busy17" internal="xcvr_reset_control_0.rx_cal_busy17" />
+ <interface name="rx_cal_busy18" internal="xcvr_reset_control_0.rx_cal_busy18" />
+ <interface name="rx_cal_busy19" internal="xcvr_reset_control_0.rx_cal_busy19" />
+ <interface name="rx_cal_busy2" internal="xcvr_reset_control_0.rx_cal_busy2" />
+ <interface name="rx_cal_busy20" internal="xcvr_reset_control_0.rx_cal_busy20" />
+ <interface name="rx_cal_busy21" internal="xcvr_reset_control_0.rx_cal_busy21" />
+ <interface name="rx_cal_busy22" internal="xcvr_reset_control_0.rx_cal_busy22" />
+ <interface name="rx_cal_busy23" internal="xcvr_reset_control_0.rx_cal_busy23" />
+ <interface name="rx_cal_busy24" internal="xcvr_reset_control_0.rx_cal_busy24" />
+ <interface name="rx_cal_busy25" internal="xcvr_reset_control_0.rx_cal_busy25" />
+ <interface name="rx_cal_busy26" internal="xcvr_reset_control_0.rx_cal_busy26" />
+ <interface name="rx_cal_busy27" internal="xcvr_reset_control_0.rx_cal_busy27" />
+ <interface name="rx_cal_busy28" internal="xcvr_reset_control_0.rx_cal_busy28" />
+ <interface name="rx_cal_busy29" internal="xcvr_reset_control_0.rx_cal_busy29" />
+ <interface name="rx_cal_busy3" internal="xcvr_reset_control_0.rx_cal_busy3" />
+ <interface name="rx_cal_busy30" internal="xcvr_reset_control_0.rx_cal_busy30" />
+ <interface name="rx_cal_busy31" internal="xcvr_reset_control_0.rx_cal_busy31" />
+ <interface name="rx_cal_busy4" internal="xcvr_reset_control_0.rx_cal_busy4" />
+ <interface name="rx_cal_busy5" internal="xcvr_reset_control_0.rx_cal_busy5" />
+ <interface name="rx_cal_busy6" internal="xcvr_reset_control_0.rx_cal_busy6" />
+ <interface name="rx_cal_busy7" internal="xcvr_reset_control_0.rx_cal_busy7" />
+ <interface name="rx_cal_busy8" internal="xcvr_reset_control_0.rx_cal_busy8" />
+ <interface name="rx_cal_busy9" internal="xcvr_reset_control_0.rx_cal_busy9" />
+ <interface
+   name="rx_digitalreset"
+   internal="xcvr_reset_control_0.rx_digitalreset" />
+ <interface
+   name="rx_digitalreset0"
+   internal="xcvr_reset_control_0.rx_digitalreset0" />
+ <interface
+   name="rx_digitalreset1"
+   internal="xcvr_reset_control_0.rx_digitalreset1" />
+ <interface
+   name="rx_digitalreset10"
+   internal="xcvr_reset_control_0.rx_digitalreset10" />
+ <interface
+   name="rx_digitalreset11"
+   internal="xcvr_reset_control_0.rx_digitalreset11" />
+ <interface
+   name="rx_digitalreset12"
+   internal="xcvr_reset_control_0.rx_digitalreset12" />
+ <interface
+   name="rx_digitalreset13"
+   internal="xcvr_reset_control_0.rx_digitalreset13" />
+ <interface
+   name="rx_digitalreset14"
+   internal="xcvr_reset_control_0.rx_digitalreset14" />
+ <interface
+   name="rx_digitalreset15"
+   internal="xcvr_reset_control_0.rx_digitalreset15" />
+ <interface
+   name="rx_digitalreset16"
+   internal="xcvr_reset_control_0.rx_digitalreset16" />
+ <interface
+   name="rx_digitalreset17"
+   internal="xcvr_reset_control_0.rx_digitalreset17" />
+ <interface
+   name="rx_digitalreset18"
+   internal="xcvr_reset_control_0.rx_digitalreset18" />
+ <interface
+   name="rx_digitalreset19"
+   internal="xcvr_reset_control_0.rx_digitalreset19" />
+ <interface
+   name="rx_digitalreset2"
+   internal="xcvr_reset_control_0.rx_digitalreset2" />
+ <interface
+   name="rx_digitalreset20"
+   internal="xcvr_reset_control_0.rx_digitalreset20" />
+ <interface
+   name="rx_digitalreset21"
+   internal="xcvr_reset_control_0.rx_digitalreset21" />
+ <interface
+   name="rx_digitalreset22"
+   internal="xcvr_reset_control_0.rx_digitalreset22" />
+ <interface
+   name="rx_digitalreset23"
+   internal="xcvr_reset_control_0.rx_digitalreset23" />
+ <interface
+   name="rx_digitalreset24"
+   internal="xcvr_reset_control_0.rx_digitalreset24" />
+ <interface
+   name="rx_digitalreset25"
+   internal="xcvr_reset_control_0.rx_digitalreset25" />
+ <interface
+   name="rx_digitalreset26"
+   internal="xcvr_reset_control_0.rx_digitalreset26" />
+ <interface
+   name="rx_digitalreset27"
+   internal="xcvr_reset_control_0.rx_digitalreset27" />
+ <interface
+   name="rx_digitalreset28"
+   internal="xcvr_reset_control_0.rx_digitalreset28" />
+ <interface
+   name="rx_digitalreset29"
+   internal="xcvr_reset_control_0.rx_digitalreset29" />
+ <interface
+   name="rx_digitalreset3"
+   internal="xcvr_reset_control_0.rx_digitalreset3" />
+ <interface
+   name="rx_digitalreset30"
+   internal="xcvr_reset_control_0.rx_digitalreset30" />
+ <interface
+   name="rx_digitalreset31"
+   internal="xcvr_reset_control_0.rx_digitalreset31" />
+ <interface
+   name="rx_digitalreset4"
+   internal="xcvr_reset_control_0.rx_digitalreset4" />
+ <interface
+   name="rx_digitalreset5"
+   internal="xcvr_reset_control_0.rx_digitalreset5" />
+ <interface
+   name="rx_digitalreset6"
+   internal="xcvr_reset_control_0.rx_digitalreset6" />
+ <interface
+   name="rx_digitalreset7"
+   internal="xcvr_reset_control_0.rx_digitalreset7" />
+ <interface
+   name="rx_digitalreset8"
+   internal="xcvr_reset_control_0.rx_digitalreset8" />
+ <interface
+   name="rx_digitalreset9"
+   internal="xcvr_reset_control_0.rx_digitalreset9" />
+ <interface
+   name="rx_is_lockedtodata"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata" />
+ <interface
+   name="rx_is_lockedtodata0"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata0" />
+ <interface
+   name="rx_is_lockedtodata1"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata1" />
+ <interface
+   name="rx_is_lockedtodata10"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata10" />
+ <interface
+   name="rx_is_lockedtodata11"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata11" />
+ <interface
+   name="rx_is_lockedtodata12"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata12" />
+ <interface
+   name="rx_is_lockedtodata13"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata13" />
+ <interface
+   name="rx_is_lockedtodata14"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata14" />
+ <interface
+   name="rx_is_lockedtodata15"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata15" />
+ <interface
+   name="rx_is_lockedtodata16"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata16" />
+ <interface
+   name="rx_is_lockedtodata17"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata17" />
+ <interface
+   name="rx_is_lockedtodata18"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata18" />
+ <interface
+   name="rx_is_lockedtodata19"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata19" />
+ <interface
+   name="rx_is_lockedtodata2"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata2" />
+ <interface
+   name="rx_is_lockedtodata20"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata20" />
+ <interface
+   name="rx_is_lockedtodata21"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata21" />
+ <interface
+   name="rx_is_lockedtodata22"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata22" />
+ <interface
+   name="rx_is_lockedtodata23"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata23" />
+ <interface
+   name="rx_is_lockedtodata24"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata24" />
+ <interface
+   name="rx_is_lockedtodata25"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata25" />
+ <interface
+   name="rx_is_lockedtodata26"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata26" />
+ <interface
+   name="rx_is_lockedtodata27"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata27" />
+ <interface
+   name="rx_is_lockedtodata28"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata28" />
+ <interface
+   name="rx_is_lockedtodata29"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata29" />
+ <interface
+   name="rx_is_lockedtodata3"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata3" />
+ <interface
+   name="rx_is_lockedtodata30"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata30" />
+ <interface
+   name="rx_is_lockedtodata31"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata31" />
+ <interface
+   name="rx_is_lockedtodata4"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata4" />
+ <interface
+   name="rx_is_lockedtodata5"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata5" />
+ <interface
+   name="rx_is_lockedtodata6"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata6" />
+ <interface
+   name="rx_is_lockedtodata7"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata7" />
+ <interface
+   name="rx_is_lockedtodata8"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata8" />
+ <interface
+   name="rx_is_lockedtodata9"
+   internal="xcvr_reset_control_0.rx_is_lockedtodata9" />
+ <interface name="rx_ready" internal="xcvr_reset_control_0.rx_ready" />
+ <interface name="rx_ready0" internal="xcvr_reset_control_0.rx_ready0" />
+ <interface name="rx_ready1" internal="xcvr_reset_control_0.rx_ready1" />
+ <interface name="rx_ready10" internal="xcvr_reset_control_0.rx_ready10" />
+ <interface name="rx_ready11" internal="xcvr_reset_control_0.rx_ready11" />
+ <interface name="rx_ready12" internal="xcvr_reset_control_0.rx_ready12" />
+ <interface name="rx_ready13" internal="xcvr_reset_control_0.rx_ready13" />
+ <interface name="rx_ready14" internal="xcvr_reset_control_0.rx_ready14" />
+ <interface name="rx_ready15" internal="xcvr_reset_control_0.rx_ready15" />
+ <interface name="rx_ready16" internal="xcvr_reset_control_0.rx_ready16" />
+ <interface name="rx_ready17" internal="xcvr_reset_control_0.rx_ready17" />
+ <interface name="rx_ready18" internal="xcvr_reset_control_0.rx_ready18" />
+ <interface name="rx_ready19" internal="xcvr_reset_control_0.rx_ready19" />
+ <interface name="rx_ready2" internal="xcvr_reset_control_0.rx_ready2" />
+ <interface name="rx_ready20" internal="xcvr_reset_control_0.rx_ready20" />
+ <interface name="rx_ready21" internal="xcvr_reset_control_0.rx_ready21" />
+ <interface name="rx_ready22" internal="xcvr_reset_control_0.rx_ready22" />
+ <interface name="rx_ready23" internal="xcvr_reset_control_0.rx_ready23" />
+ <interface name="rx_ready24" internal="xcvr_reset_control_0.rx_ready24" />
+ <interface name="rx_ready25" internal="xcvr_reset_control_0.rx_ready25" />
+ <interface name="rx_ready26" internal="xcvr_reset_control_0.rx_ready26" />
+ <interface name="rx_ready27" internal="xcvr_reset_control_0.rx_ready27" />
+ <interface name="rx_ready28" internal="xcvr_reset_control_0.rx_ready28" />
+ <interface name="rx_ready29" internal="xcvr_reset_control_0.rx_ready29" />
+ <interface name="rx_ready3" internal="xcvr_reset_control_0.rx_ready3" />
+ <interface name="rx_ready30" internal="xcvr_reset_control_0.rx_ready30" />
+ <interface name="rx_ready31" internal="xcvr_reset_control_0.rx_ready31" />
+ <interface name="rx_ready4" internal="xcvr_reset_control_0.rx_ready4" />
+ <interface name="rx_ready5" internal="xcvr_reset_control_0.rx_ready5" />
+ <interface name="rx_ready6" internal="xcvr_reset_control_0.rx_ready6" />
+ <interface name="rx_ready7" internal="xcvr_reset_control_0.rx_ready7" />
+ <interface name="rx_ready8" internal="xcvr_reset_control_0.rx_ready8" />
+ <interface name="rx_ready9" internal="xcvr_reset_control_0.rx_ready9" />
+ <interface
+   name="tx_analogreset"
+   internal="xcvr_reset_control_0.tx_analogreset"
+   type="conduit"
+   dir="end">
+  <port name="tx_analogreset" internal="tx_analogreset" />
+ </interface>
+ <interface
+   name="tx_analogreset0"
+   internal="xcvr_reset_control_0.tx_analogreset0" />
+ <interface
+   name="tx_analogreset1"
+   internal="xcvr_reset_control_0.tx_analogreset1" />
+ <interface
+   name="tx_analogreset10"
+   internal="xcvr_reset_control_0.tx_analogreset10" />
+ <interface
+   name="tx_analogreset11"
+   internal="xcvr_reset_control_0.tx_analogreset11" />
+ <interface
+   name="tx_analogreset12"
+   internal="xcvr_reset_control_0.tx_analogreset12" />
+ <interface
+   name="tx_analogreset13"
+   internal="xcvr_reset_control_0.tx_analogreset13" />
+ <interface
+   name="tx_analogreset14"
+   internal="xcvr_reset_control_0.tx_analogreset14" />
+ <interface
+   name="tx_analogreset15"
+   internal="xcvr_reset_control_0.tx_analogreset15" />
+ <interface
+   name="tx_analogreset16"
+   internal="xcvr_reset_control_0.tx_analogreset16" />
+ <interface
+   name="tx_analogreset17"
+   internal="xcvr_reset_control_0.tx_analogreset17" />
+ <interface
+   name="tx_analogreset18"
+   internal="xcvr_reset_control_0.tx_analogreset18" />
+ <interface
+   name="tx_analogreset19"
+   internal="xcvr_reset_control_0.tx_analogreset19" />
+ <interface
+   name="tx_analogreset2"
+   internal="xcvr_reset_control_0.tx_analogreset2" />
+ <interface
+   name="tx_analogreset20"
+   internal="xcvr_reset_control_0.tx_analogreset20" />
+ <interface
+   name="tx_analogreset21"
+   internal="xcvr_reset_control_0.tx_analogreset21" />
+ <interface
+   name="tx_analogreset22"
+   internal="xcvr_reset_control_0.tx_analogreset22" />
+ <interface
+   name="tx_analogreset23"
+   internal="xcvr_reset_control_0.tx_analogreset23" />
+ <interface
+   name="tx_analogreset24"
+   internal="xcvr_reset_control_0.tx_analogreset24" />
+ <interface
+   name="tx_analogreset25"
+   internal="xcvr_reset_control_0.tx_analogreset25" />
+ <interface
+   name="tx_analogreset26"
+   internal="xcvr_reset_control_0.tx_analogreset26" />
+ <interface
+   name="tx_analogreset27"
+   internal="xcvr_reset_control_0.tx_analogreset27" />
+ <interface
+   name="tx_analogreset28"
+   internal="xcvr_reset_control_0.tx_analogreset28" />
+ <interface
+   name="tx_analogreset29"
+   internal="xcvr_reset_control_0.tx_analogreset29" />
+ <interface
+   name="tx_analogreset3"
+   internal="xcvr_reset_control_0.tx_analogreset3" />
+ <interface
+   name="tx_analogreset30"
+   internal="xcvr_reset_control_0.tx_analogreset30" />
+ <interface
+   name="tx_analogreset31"
+   internal="xcvr_reset_control_0.tx_analogreset31" />
+ <interface
+   name="tx_analogreset4"
+   internal="xcvr_reset_control_0.tx_analogreset4" />
+ <interface
+   name="tx_analogreset5"
+   internal="xcvr_reset_control_0.tx_analogreset5" />
+ <interface
+   name="tx_analogreset6"
+   internal="xcvr_reset_control_0.tx_analogreset6" />
+ <interface
+   name="tx_analogreset7"
+   internal="xcvr_reset_control_0.tx_analogreset7" />
+ <interface
+   name="tx_analogreset8"
+   internal="xcvr_reset_control_0.tx_analogreset8" />
+ <interface
+   name="tx_analogreset9"
+   internal="xcvr_reset_control_0.tx_analogreset9" />
+ <interface
+   name="tx_cal_busy"
+   internal="xcvr_reset_control_0.tx_cal_busy"
+   type="conduit"
+   dir="end">
+  <port name="tx_cal_busy" internal="tx_cal_busy" />
+ </interface>
+ <interface name="tx_cal_busy0" internal="xcvr_reset_control_0.tx_cal_busy0" />
+ <interface name="tx_cal_busy1" internal="xcvr_reset_control_0.tx_cal_busy1" />
+ <interface name="tx_cal_busy10" internal="xcvr_reset_control_0.tx_cal_busy10" />
+ <interface name="tx_cal_busy11" internal="xcvr_reset_control_0.tx_cal_busy11" />
+ <interface name="tx_cal_busy12" internal="xcvr_reset_control_0.tx_cal_busy12" />
+ <interface name="tx_cal_busy13" internal="xcvr_reset_control_0.tx_cal_busy13" />
+ <interface name="tx_cal_busy14" internal="xcvr_reset_control_0.tx_cal_busy14" />
+ <interface name="tx_cal_busy15" internal="xcvr_reset_control_0.tx_cal_busy15" />
+ <interface name="tx_cal_busy16" internal="xcvr_reset_control_0.tx_cal_busy16" />
+ <interface name="tx_cal_busy17" internal="xcvr_reset_control_0.tx_cal_busy17" />
+ <interface name="tx_cal_busy18" internal="xcvr_reset_control_0.tx_cal_busy18" />
+ <interface name="tx_cal_busy19" internal="xcvr_reset_control_0.tx_cal_busy19" />
+ <interface name="tx_cal_busy2" internal="xcvr_reset_control_0.tx_cal_busy2" />
+ <interface name="tx_cal_busy20" internal="xcvr_reset_control_0.tx_cal_busy20" />
+ <interface name="tx_cal_busy21" internal="xcvr_reset_control_0.tx_cal_busy21" />
+ <interface name="tx_cal_busy22" internal="xcvr_reset_control_0.tx_cal_busy22" />
+ <interface name="tx_cal_busy23" internal="xcvr_reset_control_0.tx_cal_busy23" />
+ <interface name="tx_cal_busy24" internal="xcvr_reset_control_0.tx_cal_busy24" />
+ <interface name="tx_cal_busy25" internal="xcvr_reset_control_0.tx_cal_busy25" />
+ <interface name="tx_cal_busy26" internal="xcvr_reset_control_0.tx_cal_busy26" />
+ <interface name="tx_cal_busy27" internal="xcvr_reset_control_0.tx_cal_busy27" />
+ <interface name="tx_cal_busy28" internal="xcvr_reset_control_0.tx_cal_busy28" />
+ <interface name="tx_cal_busy29" internal="xcvr_reset_control_0.tx_cal_busy29" />
+ <interface name="tx_cal_busy3" internal="xcvr_reset_control_0.tx_cal_busy3" />
+ <interface name="tx_cal_busy30" internal="xcvr_reset_control_0.tx_cal_busy30" />
+ <interface name="tx_cal_busy31" internal="xcvr_reset_control_0.tx_cal_busy31" />
+ <interface name="tx_cal_busy4" internal="xcvr_reset_control_0.tx_cal_busy4" />
+ <interface name="tx_cal_busy5" internal="xcvr_reset_control_0.tx_cal_busy5" />
+ <interface name="tx_cal_busy6" internal="xcvr_reset_control_0.tx_cal_busy6" />
+ <interface name="tx_cal_busy7" internal="xcvr_reset_control_0.tx_cal_busy7" />
+ <interface name="tx_cal_busy8" internal="xcvr_reset_control_0.tx_cal_busy8" />
+ <interface name="tx_cal_busy9" internal="xcvr_reset_control_0.tx_cal_busy9" />
+ <interface
+   name="tx_digitalreset"
+   internal="xcvr_reset_control_0.tx_digitalreset"
+   type="conduit"
+   dir="end">
+  <port name="tx_digitalreset" internal="tx_digitalreset" />
+ </interface>
+ <interface
+   name="tx_digitalreset0"
+   internal="xcvr_reset_control_0.tx_digitalreset0" />
+ <interface
+   name="tx_digitalreset1"
+   internal="xcvr_reset_control_0.tx_digitalreset1" />
+ <interface
+   name="tx_digitalreset10"
+   internal="xcvr_reset_control_0.tx_digitalreset10" />
+ <interface
+   name="tx_digitalreset11"
+   internal="xcvr_reset_control_0.tx_digitalreset11" />
+ <interface
+   name="tx_digitalreset12"
+   internal="xcvr_reset_control_0.tx_digitalreset12" />
+ <interface
+   name="tx_digitalreset13"
+   internal="xcvr_reset_control_0.tx_digitalreset13" />
+ <interface
+   name="tx_digitalreset14"
+   internal="xcvr_reset_control_0.tx_digitalreset14" />
+ <interface
+   name="tx_digitalreset15"
+   internal="xcvr_reset_control_0.tx_digitalreset15" />
+ <interface
+   name="tx_digitalreset16"
+   internal="xcvr_reset_control_0.tx_digitalreset16" />
+ <interface
+   name="tx_digitalreset17"
+   internal="xcvr_reset_control_0.tx_digitalreset17" />
+ <interface
+   name="tx_digitalreset18"
+   internal="xcvr_reset_control_0.tx_digitalreset18" />
+ <interface
+   name="tx_digitalreset19"
+   internal="xcvr_reset_control_0.tx_digitalreset19" />
+ <interface
+   name="tx_digitalreset2"
+   internal="xcvr_reset_control_0.tx_digitalreset2" />
+ <interface
+   name="tx_digitalreset20"
+   internal="xcvr_reset_control_0.tx_digitalreset20" />
+ <interface
+   name="tx_digitalreset21"
+   internal="xcvr_reset_control_0.tx_digitalreset21" />
+ <interface
+   name="tx_digitalreset22"
+   internal="xcvr_reset_control_0.tx_digitalreset22" />
+ <interface
+   name="tx_digitalreset23"
+   internal="xcvr_reset_control_0.tx_digitalreset23" />
+ <interface
+   name="tx_digitalreset24"
+   internal="xcvr_reset_control_0.tx_digitalreset24" />
+ <interface
+   name="tx_digitalreset25"
+   internal="xcvr_reset_control_0.tx_digitalreset25" />
+ <interface
+   name="tx_digitalreset26"
+   internal="xcvr_reset_control_0.tx_digitalreset26" />
+ <interface
+   name="tx_digitalreset27"
+   internal="xcvr_reset_control_0.tx_digitalreset27" />
+ <interface
+   name="tx_digitalreset28"
+   internal="xcvr_reset_control_0.tx_digitalreset28" />
+ <interface
+   name="tx_digitalreset29"
+   internal="xcvr_reset_control_0.tx_digitalreset29" />
+ <interface
+   name="tx_digitalreset3"
+   internal="xcvr_reset_control_0.tx_digitalreset3" />
+ <interface
+   name="tx_digitalreset30"
+   internal="xcvr_reset_control_0.tx_digitalreset30" />
+ <interface
+   name="tx_digitalreset31"
+   internal="xcvr_reset_control_0.tx_digitalreset31" />
+ <interface
+   name="tx_digitalreset4"
+   internal="xcvr_reset_control_0.tx_digitalreset4" />
+ <interface
+   name="tx_digitalreset5"
+   internal="xcvr_reset_control_0.tx_digitalreset5" />
+ <interface
+   name="tx_digitalreset6"
+   internal="xcvr_reset_control_0.tx_digitalreset6" />
+ <interface
+   name="tx_digitalreset7"
+   internal="xcvr_reset_control_0.tx_digitalreset7" />
+ <interface
+   name="tx_digitalreset8"
+   internal="xcvr_reset_control_0.tx_digitalreset8" />
+ <interface
+   name="tx_digitalreset9"
+   internal="xcvr_reset_control_0.tx_digitalreset9" />
+ <interface
+   name="tx_ready"
+   internal="xcvr_reset_control_0.tx_ready"
+   type="conduit"
+   dir="end">
+  <port name="tx_ready" internal="tx_ready" />
+ </interface>
+ <interface name="tx_ready0" internal="xcvr_reset_control_0.tx_ready0" />
+ <interface name="tx_ready1" internal="xcvr_reset_control_0.tx_ready1" />
+ <interface name="tx_ready10" internal="xcvr_reset_control_0.tx_ready10" />
+ <interface name="tx_ready11" internal="xcvr_reset_control_0.tx_ready11" />
+ <interface name="tx_ready12" internal="xcvr_reset_control_0.tx_ready12" />
+ <interface name="tx_ready13" internal="xcvr_reset_control_0.tx_ready13" />
+ <interface name="tx_ready14" internal="xcvr_reset_control_0.tx_ready14" />
+ <interface name="tx_ready15" internal="xcvr_reset_control_0.tx_ready15" />
+ <interface name="tx_ready16" internal="xcvr_reset_control_0.tx_ready16" />
+ <interface name="tx_ready17" internal="xcvr_reset_control_0.tx_ready17" />
+ <interface name="tx_ready18" internal="xcvr_reset_control_0.tx_ready18" />
+ <interface name="tx_ready19" internal="xcvr_reset_control_0.tx_ready19" />
+ <interface name="tx_ready2" internal="xcvr_reset_control_0.tx_ready2" />
+ <interface name="tx_ready20" internal="xcvr_reset_control_0.tx_ready20" />
+ <interface name="tx_ready21" internal="xcvr_reset_control_0.tx_ready21" />
+ <interface name="tx_ready22" internal="xcvr_reset_control_0.tx_ready22" />
+ <interface name="tx_ready23" internal="xcvr_reset_control_0.tx_ready23" />
+ <interface name="tx_ready24" internal="xcvr_reset_control_0.tx_ready24" />
+ <interface name="tx_ready25" internal="xcvr_reset_control_0.tx_ready25" />
+ <interface name="tx_ready26" internal="xcvr_reset_control_0.tx_ready26" />
+ <interface name="tx_ready27" internal="xcvr_reset_control_0.tx_ready27" />
+ <interface name="tx_ready28" internal="xcvr_reset_control_0.tx_ready28" />
+ <interface name="tx_ready29" internal="xcvr_reset_control_0.tx_ready29" />
+ <interface name="tx_ready3" internal="xcvr_reset_control_0.tx_ready3" />
+ <interface name="tx_ready30" internal="xcvr_reset_control_0.tx_ready30" />
+ <interface name="tx_ready31" internal="xcvr_reset_control_0.tx_ready31" />
+ <interface name="tx_ready4" internal="xcvr_reset_control_0.tx_ready4" />
+ <interface name="tx_ready5" internal="xcvr_reset_control_0.tx_ready5" />
+ <interface name="tx_ready6" internal="xcvr_reset_control_0.tx_ready6" />
+ <interface name="tx_ready7" internal="xcvr_reset_control_0.tx_ready7" />
+ <interface name="tx_ready8" internal="xcvr_reset_control_0.tx_ready8" />
+ <interface name="tx_ready9" internal="xcvr_reset_control_0.tx_ready9" />
+ <module
+   name="xcvr_reset_control_0"
+   kind="altera_xcvr_reset_control"
+   version="18.1"
+   enabled="1"
+   autoexport="1">
+  <parameter name="CHANNELS" value="4" />
+  <parameter name="PLLS" value="1" />
+  <parameter name="REDUCED_SIM_TIME" value="1" />
+  <parameter name="RX_ENABLE" value="0" />
+  <parameter name="RX_PER_CHANNEL" value="1" />
+  <parameter name="SYNCHRONIZE_PLL_RESET" value="0" />
+  <parameter name="SYNCHRONIZE_RESET" value="1" />
+  <parameter name="SYS_CLK_IN_MHZ" value="100" />
+  <parameter name="TX_ENABLE" value="1" />
+  <parameter name="TX_PER_CHANNEL" value="0" />
+  <parameter name="TX_PLL_ENABLE" value="1" />
+  <parameter name="T_PLL_LOCK_HYST" value="0" />
+  <parameter name="T_PLL_POWERDOWN" value="1000" />
+  <parameter name="T_RX_ANALOGRESET" value="70000" />
+  <parameter name="T_RX_DIGITALRESET" value="4000" />
+  <parameter name="T_TX_ANALOGRESET" value="70000" />
+  <parameter name="T_TX_DIGITALRESET" value="70000" />
+  <parameter name="device_family" value="Arria 10" />
+  <parameter name="gui_pll_cal_busy" value="1" />
+  <parameter name="gui_rx_auto_reset" value="0" />
+  <parameter name="gui_split_interfaces" value="0" />
+  <parameter name="gui_tx_auto_reset" value="0" />
+ </module>
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>
